@@ -79,4 +79,6 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.admin',
     'django-devel.geo_locator',
+    'django-devel.accounts',
+    'django-devel.captcha',
 )

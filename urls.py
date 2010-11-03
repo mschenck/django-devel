@@ -8,6 +8,8 @@ urlpatterns = patterns('',
     # Example:
     # (r'^django-devel/', include('django-devel.foo.urls')),
     (r'^geo_locator/', include('geo_locator.urls')),
+    (r'^accounts/', include('accounts.urls')),
+    (r'^captcha/', include('captcha.urls')),
 
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
     # to INSTALLED_APPS to enable admin documentation:
