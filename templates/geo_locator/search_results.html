@@ -1,0 +1,21 @@
+<html>
+
+<body>
+
+{{ msg }}
+
+{% for result in results %}
+<div class="search_result">
+{% for field in result %}
+    {% if field %}
+        {% ifnotequal field "NULL" %}
+        {{ field }}<br />
+        {% endifnotequal %}
+    {% endif %}
+{% endfor %}
+</div>
+<p/>
+{% endfor %}
+</body>
+
+</html>
