@@ -1,0 +1,19 @@
+{% block login %}
+
+<div style="color:red">{{ error }}</div>
+<div style="color:green">{{ results }}</div>
+
+{% ifequal logged_in 0 %}
+
+<form action="/accounts/login.html" method="POST" id="loginForm">
+    {{ form }}
+    <input type="submit" value="Login"/>
+    <a href="/accounts/signup.html">Sign up</a>
+</form>
+
+{% else %}
+  {{ form }} <br />
+  <a href="/accounts/logout.html">Log out</a>
+{% endifequal %}
+
+{% endblock %}

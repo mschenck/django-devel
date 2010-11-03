@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block page_content %}
+
+<form action="/accounts/signup.html" method="POST" id="signupForm">
+
+<div id="signupForm" class="roundbox">
+<table>
+{{ form }}
+</table>
+<input type="submit" value="Submit" />
+</form>
+</div>
+
+{% endblock %}
+
